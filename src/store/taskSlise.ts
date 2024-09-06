@@ -12,8 +12,8 @@ interface TasksState {
 
 const initialState: TasksState = {
   tasks: [
-    { id: 1, title: 'Learn TypeScript', completed: false },
-    { id: 2, title: 'Build a Redux App', completed: true },
+    { id: 1, title: 'Samuel L Jackson', completed: false },
+    { id: 2, title: 'Kikimora', completed: true },
   ],
 };
 

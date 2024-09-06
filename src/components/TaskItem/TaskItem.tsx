@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './TaskItem.module.scss';
 
 interface TaskItemProps {
   task: {
@@ -12,17 +13,17 @@ interface TaskItemProps {
 
 export const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onToggle }) => {
   return (
-    <div>
+    <div className={`${styles.taskItem} ${task.completed ? styles.completed : ''}`}>
       <input
+        className={styles.input}
         type="checkbox"
         checked={task.completed}
         onChange={onToggle}
       />
-      <p style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+      <p className={styles.task}>
         {task.title}
       </p>
-      <button onClick={onDelete}>Delete</button>
+      <button className={styles.button} onClick={onDelete}>Delete</button>
     </div>
   );
 };
-

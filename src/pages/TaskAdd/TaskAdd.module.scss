@@ -1,0 +1,36 @@
+.addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .taskForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 500px;
+        height: 500px;
+        border: 5px solid red;
+        background-color: rgba(72, 5, 5, 0.562);
+        .title {
+            font-size: 30px;
+            font-family: cursive;
+            color: aqua;
+        }
+        .input {
+            width: 300px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 20px;
+        }
+        .button {
+            width: 100px;
+            height: 40px;
+            border-radius: 40px;
+            border: 0;
+            background-color: aqua;
+            color: black;
+            font-weight: 900;
+        }
+    }
+}

@@ -1,18 +1,42 @@
 .header {
-    background-color: black;
+    background-color: red;
     width: 100%;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
 
+    .logo {
+        height: 100%;
+        width: 50px;
+        cursor: pointer;
+        &__link {
+            height: 100%;
+            width: 100%;
+            .image {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
     .nav {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
-
+        gap: 100px;
         .link {
-            font-size: 20px;
+            height: 100%;
+            width: 100px;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            font-family: cursive;
         }
     }
 }

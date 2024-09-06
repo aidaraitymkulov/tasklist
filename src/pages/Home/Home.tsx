@@ -4,7 +4,7 @@ import { RootState } from '../../store/store';
 import { TaskItem } from '../../components/TaskItem';
 import { removeTask, toggleTask } from '../../store/taskSlise';
 
-export const Home: React.FC = () => {
+const Home: React.FC = () => {
   const tasks = useSelector((state: RootState) => state.tasks.tasks);
   const dispatch = useDispatch();
 
@@ -22,4 +22,6 @@ export const Home: React.FC = () => {
     </div>
   );
 }
+
+export default Home
 
