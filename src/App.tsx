@@ -7,6 +7,7 @@ import { Suspense } from 'react'
 import icon from './assets/images/Без названия.jpeg'
 import style from './App.module.scss'
 export const App: React.FC = () => {
+
   return (
     <div className={styles.container}>
       <Header />
